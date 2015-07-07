@@ -1,0 +1,17 @@
+package uk.threepp.plusscript;
+
+public class Main {
+
+	private static String banner;
+	
+	public static void main(String[] args) {
+
+		banner = "#####################"
+				+ "\n\n"
+				+ "PlusScript Interpreter v1.0"
+				+ "\n\n"
+				+ "#####################";
+		
+		System.out.println(banner);
+	}
+}
