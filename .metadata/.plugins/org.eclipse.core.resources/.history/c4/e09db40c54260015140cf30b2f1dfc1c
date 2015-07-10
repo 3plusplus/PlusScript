@@ -1,0 +1,37 @@
+package uk.threepp.plusscript;
+
+import java.io.IOException;
+
+import uk.threepp.plusscript.input.TextHandler;
+
+public class Main {
+
+	private static String banner;
+	private static String fname;
+	private static TextHandler textHandler;
+	
+	public static void main(String... args) throws IOException {
+		
+		banner = "###########################"
+				+ "\n\n"
+				+ "PlusScript Interpreter v1.0"
+				+ "\nCopyright 3++ 2015"
+				+ "\n\n"
+				+ "###########################";
+		
+		fname = "";
+		for (String s : args) {
+			
+			fname += s + " ";
+		}
+		
+		System.out.println(banner);
+		
+		textHandler = new TextHandler();
+		
+		if (fname != "") {
+			
+			textHandler.cacheFile(fname);
+		}
+	}
+}

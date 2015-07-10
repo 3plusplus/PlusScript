@@ -1,0 +1,20 @@
+package uk.threepp.plusscript.input;
+
+import java.io.IOException;
+import java.util.logging.FileHandler;
+
+public class TextHandler {
+
+	public FileHandler fileHandler;
+	
+	public TextHandler() throws SecurityException, IOException {
+		
+		fileHandler = new FileHandler();
+	}
+	
+	public boolean cacheFile(String fname) {
+
+		System.out.println("\nLoading file \"" + fname.trim() + "\"...");
+		return false;
+	}
+}

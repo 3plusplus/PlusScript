@@ -1,0 +1,10 @@
+package uk.threepp.plusscript.input;
+
+import uk.threepp.plusscript.error.PlusError;
+
+public class TextHandler {
+
+	public PlusError cacheFile(String fname) {
+		return new PlusError();
+	}
+}

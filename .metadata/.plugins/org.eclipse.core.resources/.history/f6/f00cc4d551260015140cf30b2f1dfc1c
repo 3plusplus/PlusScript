@@ -1,0 +1,17 @@
+package uk.threepp.plusscript.input;
+
+import java.io.FileNotFoundException;
+import java.util.logging.FileHandler;
+
+public class TextHandler {
+
+	public FileHandler fileHandler;
+	
+	
+	
+	public boolean cacheFile(String fname) throws FileNotFoundException {
+
+		System.out.println("\nLoading file \"" + fname.trim() + "\"...");
+		return false;
+	}
+}

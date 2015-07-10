@@ -1,0 +1,7 @@
+package uk.threepp.plusscript.error;
+
+public enum PlusErrorCode {
+
+	FatalError, //marker to show which errors are fatal
+	FileNotFoundError
+}

@@ -1,0 +1,29 @@
+package uk.threepp.plusscript.error;
+
+public class PlusError {
+
+	PlusErrorCode errorCode;
+	String errorText;
+	
+	public PlusError(PlusErrorCode errorCode, String errorText) {
+		
+		this.errorCode = errorCode;
+		this.errorText = errorText;
+	}
+
+	public PlusErrorCode getErrorCode() {
+		return errorCode;
+	}
+
+	public void setErrorCode(PlusErrorCode errorCode) {
+		this.errorCode = errorCode;
+	}
+
+	public String getErrorText() {
+		return errorText;
+	}
+
+	public void setErrorText(String errorText) {
+		this.errorText = errorText;
+	}
+}

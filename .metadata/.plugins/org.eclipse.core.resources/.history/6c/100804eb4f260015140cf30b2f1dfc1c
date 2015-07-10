@@ -1,0 +1,11 @@
+package uk.threepp.plusscript.error;
+
+public class PlusError {
+
+	PlusErrorCode errorCode;
+	String errorText;
+	
+	public PlusError(PlusErrorCode errorCode) {
+		
+	}
+}

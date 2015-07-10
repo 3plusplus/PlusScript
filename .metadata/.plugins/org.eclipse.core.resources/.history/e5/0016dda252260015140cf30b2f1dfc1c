@@ -1,0 +1,21 @@
+package uk.threepp.plusscript.input;
+
+import java.nio.file.Path;
+import java.nio.file.Paths;
+
+public class TextHandler {
+
+	public Path fpath;
+	
+	public TextHandler() {
+		
+	}
+	
+	public boolean cacheFile(String fname) {
+
+		fpath = Paths.get("");
+		fpath.toFile();
+		System.out.println("\nLoading file \"" + fname.trim() + "\"...");
+		return false;
+	}
+}

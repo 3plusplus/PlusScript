@@ -1,0 +1,9 @@
+package uk.threepp.plusscript.error;
+
+public class PlusErrorDisplay {
+
+	public static void display(PlusError error) {
+		
+		System.out.println(error + " thrown.");
+	}
+}

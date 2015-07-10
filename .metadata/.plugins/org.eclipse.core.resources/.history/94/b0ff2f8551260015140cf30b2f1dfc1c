@@ -1,0 +1,13 @@
+package uk.threepp.plusscript.input;
+
+import uk.threepp.plusscript.error.PlusError;
+import uk.threepp.plusscript.error.PlusErrorCode;
+
+public class TextHandler {
+
+	public PlusError cacheFile(String fname) {
+
+		System.out.println("\nLoading file \"" + fname.trim() + "\"...");
+		return new PlusError(PlusErrorCode.FileNotFoundError, "The file " + fname + " was not found.");
+	}
+}

@@ -1,0 +1,20 @@
+package uk.threepp.plusscript.input;
+
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.Reader;
+
+public class TextHandler {
+
+	private Reader reader;
+	
+	public TextHandler() {
+	}
+	
+	public boolean cacheFile(String fname) {
+
+		System.out.println("\nLoading file \"" + fname.trim() + "\"...");
+		reader = new FileReader("");
+		return false;
+	}
+}

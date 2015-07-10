@@ -1,0 +1,5 @@
+package uk.threepp.plusscript.error;
+
+public enum PlusErrorCode {
+
+}
