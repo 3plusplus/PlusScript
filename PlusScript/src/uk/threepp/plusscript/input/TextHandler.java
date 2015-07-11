@@ -1,34 +1,26 @@
 package uk.threepp.plusscript.input;
 
+import java.io.File;
 import java.io.FileNotFoundException;
-import java.io.FileReader;
-import java.io.IOException;
-import java.io.Reader;
+import java.util.Scanner;
 
 public class TextHandler {
 
-	private Reader reader;
-	
 	public TextHandler() {
 	}
 	
-	public char[] cacheFile(String fname) {
-
-		System.out.println("\nLoading file \"" + fname.trim() + "\"...");
+	public String cacheFile(String fname) {
+		
+		String returnVals = "";
+		
 		try {
-			
-			reader = new FileReader(fname);
-			char[] cbuf = new char[]{};
-			reader.read(cbuf);
-			return cbuf;
+			File file = new File(fname);
+			Scanner scanner = new Scanner(file);
+			while (scanner.hasNextLine()) returnVals += scanner.nextLine();
+			scanner.close();
+			return returnVals;
 			
 		} catch (FileNotFoundException e) {
-			
-			e.printStackTrace();
-			return null;
-			
-		} catch (IOException e) {
-			
 			e.printStackTrace();
 			return null;
 		}

@@ -1,0 +1,46 @@
+package uk.threepp.plusscript.lang.token;
+
+import java.util.ArrayList;
+
+public class Tokeniser {
+
+	private static ArrayList<Token> tokens;
+	private static ArrayList<String> keywords;
+	private static ArrayList<String> operations;
+	
+	public static void init() {
+		
+		String[] keys = new String[] {
+				
+		};
+		for (String k : keys) {
+			keywords.add(k);
+		}
+		
+		String[] ops = new String[] {
+				
+		};
+		for (String o : ops) {
+			operations.add(o);
+		}
+	}
+	
+	public static ArrayList<Token> getTokens() {
+		return tokens;
+	}
+
+	public static void setTokens(ArrayList<Token> tokens) {
+		Tokeniser.tokens = tokens;
+	}
+
+	/**
+	 * @param String toTokenise (this is the string that will be tokenised
+	 * @return ArrayList<Token> tokens (this is the tokenised list)
+	 */
+	public static ArrayList<Token> tokenise(String toTokenise) {
+		
+		ArrayList<Token> toks = new ArrayList<Token>();
+		toks.add(new Token("Hello World"));
+		return toks;
+	}
+}

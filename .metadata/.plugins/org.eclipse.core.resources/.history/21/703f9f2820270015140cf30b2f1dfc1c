@@ -1,0 +1,24 @@
+package uk.threepp.plusscript.lang.token;
+
+/**
+ * A packet of code, such as a keyword, an operation or a variable name.
+ * 
+ * E.g. = variable myVar ( ) { } "Hello"
+ */
+public class Token {
+
+	private String tokenText;
+	
+	public Token(String tokenText) {
+		
+		setTokenText(tokenText);
+	}
+
+	public String getTokenText() {
+		return tokenText;
+	}
+
+	public void setTokenText(String tokenText) {
+		this.tokenText = tokenText;
+	}
+}

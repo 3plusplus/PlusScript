@@ -1,0 +1,11 @@
+package uk.threepp.plusscript.lang.token;
+
+/**
+ * Different types of token.
+ */
+public enum TokenType {
+
+	OPERATION,
+	KEYWORD,
+	STRING
+}

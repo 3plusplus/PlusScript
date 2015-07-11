@@ -1,0 +1,13 @@
+package uk.threepp.plusscript.lang.token;
+
+/**
+ * A packet of code, such as a keyword, an operation or a variable name.
+ * 
+ * E.g. = variable myVar ( ) { } "Hello"
+ */
+public class Token {
+
+	public Token() {
+		
+	}
+}
